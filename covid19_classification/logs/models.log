@@ -1,0 +1,6 @@
+INFO:2021-10-18 17:52:03,170:models:mobileNetV2 is ready
+INFO:2021-10-18 17:52:03,170:models:model: mobileNet , input_shape: (112, 112, 1), num_classes: 4, pre_trained: True
+INFO:2021-10-18 17:52:04,001:models:prediction of mobileNet is: [[ 2.2223754  1.4316931 -1.6725559 -3.6869617]]
+INFO:2021-10-18 17:52:06,289:models:efficientNetB0 is ready
+INFO:2021-10-18 17:52:06,289:models:model: mobileNet , input_shape: (112, 112, 1), num_classes: 4, pre_trained: True
+INFO:2021-10-18 17:52:07,424:models:prediction of efficientNet is: [[0.9834256  0.15268502 0.44574133 0.3512344 ]]

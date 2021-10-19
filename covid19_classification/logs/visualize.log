@@ -1,0 +1,6 @@
+INFO:2021-10-18 17:52:04,001:visualize:gradcam got model: <keras.engine.functional.Functional object at 0x7fa01ce33af0> , layerName: out_relu
+INFO:2021-10-18 17:52:04,001:visualize:got image array
+INFO:2021-10-18 17:52:04,147:visualize:got heatmap
+INFO:2021-10-18 17:52:07,425:visualize:gradcam got model: <keras.engine.functional.Functional object at 0x7fa01f68dc40> , layerName: top_activation
+INFO:2021-10-18 17:52:07,425:visualize:got image array
+INFO:2021-10-18 17:52:07,621:visualize:got heatmap
