@@ -4,3 +4,9 @@ INFO:2021-10-18 17:52:04,001:models:prediction of mobileNet is: [[ 2.2223754  1.
 INFO:2021-10-18 17:52:06,289:models:efficientNetB0 is ready
 INFO:2021-10-18 17:52:06,289:models:model: mobileNet , input_shape: (112, 112, 1), num_classes: 4, pre_trained: True
 INFO:2021-10-18 17:52:07,424:models:prediction of efficientNet is: [[0.9834256  0.15268502 0.44574133 0.3512344 ]]
+INFO:2021-10-19 14:55:32,422:models:mobileNetV2 is ready
+INFO:2021-10-19 14:55:32,422:models:model: mobileNet , input_shape: (112, 112, 1), num_classes: 4, pre_trained: True
+INFO:2021-10-19 14:55:33,394:models:prediction of mobileNet is: [[ 2.2223845  1.4316896 -1.6725596 -3.6869636]]
+INFO:2021-10-19 14:55:40,767:models:efficientNetB0 is ready
+INFO:2021-10-19 14:55:40,767:models:model: mobileNet , input_shape: (112, 112, 1), num_classes: 4, pre_trained: True
+INFO:2021-10-19 14:55:41,938:models:prediction of efficientNet is: [[0.9834256  0.15268496 0.44574124 0.3512341 ]]

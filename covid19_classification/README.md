@@ -8,15 +8,15 @@ CXR Classification with **streamlit**
 
 ## Models:
 
- ![MobileNetV2](Streamlit_Minimal_ML/Images/MobileNetV2.png)
- ![EfficientNetB0](Streamlit_Minimal_ML/Images/EfficientNetB0.png)
+ ![MobileNetV2](covid19_classification/Images/MobileNetV2.png)
+ ![EfficientNetB0](covid19_classification/Images/EfficientNetB0.png)
 
 ## Usage
 
 #### Clone the repository
 ```bash
 git clone https://gitlab.aimedic.co/parsa592323/cxr.git
-cd Streamlit_Minimal_ML/src
+cd covid19_classification/src
 ```
 
 #### Installing dependencies
@@ -55,13 +55,13 @@ docker run 'dockerfile-imagename'
 #### Results:
 
 Upload An Image:
-![1](Streamlit_Minimal_ML/Images/upload_image.png)
+![1](covid19_classification/Images/upload_image.png)
 
 The sample:
-![2](Streamlit_Minimal_ML/Images/COVID-19.jpeg)
+![2](covid19_classification/Images/COVID-19.jpeg)
 
 Get the Classification Result:
-![3](Streamlit_Minimal_ML/Images/result.png)
+![3](covid19_classification/Images/result.png)
 
 
 

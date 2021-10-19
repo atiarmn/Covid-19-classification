@@ -6,6 +6,7 @@ from data import get_image
 from models import EfficientNet, MobileNet
 from gradcam import GradCAM
 import logging
+from resource_manager import *
 
 logger=logging.getLogger("service")
 logger.setLevel(logging.INFO)
@@ -51,6 +52,11 @@ else:
     mobile_net.model.layers[-1].activation = None
 
     pred = mobile_net.predict(image)
+    
+    # monitor CPU and memory usage
+    resources = Resource_Manager()
+    resources = resources.monitor()
+
     label = np.argmax(pred)
     show_class(label)
     model =  mobile_net.model.get_layer('mobilenetv2_1.00_224')
@@ -58,6 +64,10 @@ else:
     gradcam = GradCAM(model, last_conv_layer_name, loaded_img)
     img_array = preprocess_input(gradcam.get_img_array())
     heatmap = gradcam.make_gradcam_heatmap(img_array)
+
+    # monitor CPU and memory usage
+    resources = Resource_Manager()
+    resources = resources.monitor()
 
     st.image(gradcam.save_and_display_gradcam(original_img,heatmap), use_column_width=True)
 
@@ -69,6 +79,11 @@ else:
                                input_shape=(112, 112, 1),
                                num_classes=4)
     pred = efficient_net.predict(image)
+
+    # monitor CPU and memory usage
+    resources = Resource_Manager()
+    resources = resources.monitor()
+    
     label = np.argmax(pred)
     show_class(label)
 
@@ -76,6 +91,11 @@ else:
     last_conv_layer_name = "top_activation"
     
     gradcam = GradCAM(model, last_conv_layer_name, loaded_img)
+    
+    # monitor CPU and memory usage
+    resources = Resource_Manager()
+    resources = resources.monitor()
+    
     img_array = preprocess_input(gradcam.get_img_array())
     heatmap = gradcam.make_gradcam_heatmap(img_array)
 
