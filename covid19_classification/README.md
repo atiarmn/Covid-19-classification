@@ -8,8 +8,8 @@ CXR Classification with **streamlit**
 
 ## Models:
 
- ![MobileNetV2](covid19_classification/Images/MobileNetV2.png)
- ![EfficientNetB0](covid19_classification/Images/EfficientNetB0.png)
+ ![MobileNetV2](Images/MobileNetV2.png)
+ ![EfficientNetB0](Images/EfficientNetB0.png)
 
 ## Usage
 
@@ -55,13 +55,13 @@ docker run 'dockerfile-imagename'
 #### Results:
 
 Upload An Image:
-![1](covid19_classification/Images/upload_image.png)
+![1](Images/upload_image.png)
 
 The sample:
-![2](covid19_classification/Images/COVID-19.jpeg)
+![2](Images/COVID-19.jpeg)
 
 Get the Classification Result:
-![3](covid19_classification/Images/result.png)
+![3](Images/result.png)
 
 
 
